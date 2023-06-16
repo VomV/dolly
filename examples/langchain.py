@@ -35,6 +35,7 @@ dbutils.widgets.combobox("input_model", default_model, suggested_models, "input_
 
 from training.generate import InstructionTextGenerationPipeline, load_model_tokenizer_for_generate
 
+
 input_model = dbutils.widgets.get("input_model")
 
 model, tokenizer = load_model_tokenizer_for_generate(input_model)
